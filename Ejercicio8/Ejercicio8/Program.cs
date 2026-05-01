@@ -67,7 +67,21 @@ namespace Ejercicio8
             Minorista.Importe = 10000;
             Console.WriteLine($"Total Minorista: {p5.ObtenerImporteFinal(Minorista)}");
 
-            
+            Console.WriteLine("-----------------------------------------");
+
+            Console.WriteLine("---------- PRUEBAS PROBLEMA 06 ----------");
+
+
+            var p6 = new Problema6();
+
+            string ejemplo1 = "  ab 123 x ";
+            string resultadoej = p6.NormalizarCodigoProducto(ejemplo1);
+
+            Console.WriteLine($"Original: '{ejemplo1}'");
+            Console.WriteLine($"Modificado: {resultadoej}");
+
+            Console.WriteLine($"Prueba Null: {p6.NormalizarCodigoProducto(null)}");
+
         }
     }
 }
