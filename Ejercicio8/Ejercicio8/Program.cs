@@ -55,7 +55,19 @@ namespace Ejercicio8
 
             Console.WriteLine("-----------------------------------------");
 
+            Console.WriteLine("---------- PRUEBAS PROBLEMA 05 ----------");
 
+            var p5 = new Problema5();
+
+            Sale Mayorista = new WholesaleSale();
+            Mayorista.Importe = 20000;
+            Console.WriteLine($"Total Mayorista: {p5.ObtenerImporteFinal(Mayorista)}");
+
+            Sale Minorista = new RetailSale();
+            Minorista.Importe = 10000;
+            Console.WriteLine($"Total Minorista: {p5.ObtenerImporteFinal(Minorista)}");
+
+            
         }
     }
 }
